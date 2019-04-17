@@ -2,10 +2,10 @@ using System;
 
 namespace garys_garage
 {
-    public class Tesla : Vehicle {  // Electric car
+    public class Tesla : Vehicle, IElectric {  // Electric car
         public double BatteryKWh { get; set; }
         public void ChargeBattery () {
-            Console.WriteLine("Charging that battery. Saving the world. NBD");
+            Console.WriteLine($"Charging the {MainColor} Tesla's battery. Saving the world. NBD");
         }
         public override void Drive () {
             Console.WriteLine($"The {MainColor} Tesla glides silently past!");

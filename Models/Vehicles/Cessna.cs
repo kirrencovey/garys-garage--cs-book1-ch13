@@ -2,10 +2,10 @@ using System;
 
 namespace garys_garage
 {
-    public class Cessna : Vehicle {  // Propellor light aircraft
+    public class Cessna : Vehicle, IGasPowered {  // Propellor light aircraft
         public double FuelCapacity { get; set; }
         public void RefuelTank () {
-            Console.WriteLine("Time to refuel this lil plane.");
+            Console.WriteLine($"Time to refuel this lil {MainColor} Cessna so we can fly fly fly!");
         }
         public override void Drive () {
             Console.WriteLine($"The {MainColor} Cessna flies past. ZZZOOOOOM!");
